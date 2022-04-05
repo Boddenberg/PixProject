@@ -33,8 +33,8 @@ public class BankAccountService {
 
 	}
 	
-	public BankAccount add(BankAccount bankAccount) {
-		return repository.save(bankAccount);
+	public ResponseEntity add(BankAccount bankAccount) {
+		return new ResponseEntity(repository.save(bankAccount), HttpStatus.OK);
 	}
 	
 	public BankAccount update(BankAccount bankAccount) {
