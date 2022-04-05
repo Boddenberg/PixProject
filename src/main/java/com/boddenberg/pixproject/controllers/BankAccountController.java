@@ -1,6 +1,7 @@
 package com.boddenberg.pixproject.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,13 +16,8 @@ public class BankAccountController {
 		BankAccountService service;
 	
 		@GetMapping("BankAccount/")
-		public String allKeys() {
-			return "Hello World";
-			
-		
-		
-		
-		
+		public ResponseEntity allKeys() {
+			return service.findAll();
 		}
 		
 	}
