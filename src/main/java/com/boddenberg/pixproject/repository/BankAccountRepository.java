@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.boddenberg.pixproject.entity.BankAccount;
 
 @Repository
-public interface BankAccountRepository extends MongoRepository<BankAccount, Long>{
+public interface BankAccountRepository extends MongoRepository<BankAccount, String>{
 
 }

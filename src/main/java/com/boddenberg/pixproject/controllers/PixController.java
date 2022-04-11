@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path = "/pix")
 public class PixController {
 
-	@GetMapping("/")
-	public String allKeys() {
-		return "Hello World";
-		
-	
-	
-	
-	
-	}
+//	@GetMapping("/")
+//	public String allKeys() {
+//		return "Hello World";
+//		
+//	
+//	
+//	
+//	
+//	}
 	
 }
